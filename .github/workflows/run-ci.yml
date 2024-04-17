@@ -33,11 +33,11 @@ jobs:
         id: wait
         uses: NeuraLegion/wait-for@release
         with:
-          api_token:  ${{ secrets.BRIGHT_TOKEN }}
+          api_token:  ${{ secrets.BRIGHT_SENSI_TEST }}
           hostname: app.brightsec.com
           scan: ${{ steps.start.outputs.id }}
           wait_for: high
           code_scanning_alerts: true
-          github_token: ${{ secrets.KEY_GITHUB }}
+          github_token: ${{ secrets.SENSI_BRIGHT_TEST }}
           timeout: 600
           stop_scan: true
