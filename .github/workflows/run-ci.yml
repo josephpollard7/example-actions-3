@@ -22,7 +22,7 @@ jobs:
         id: start
         uses: NeuraLegion/run-scan@release
         with:
-          api_token: ${{ secrets.BRIGHT_TOKEN}}
+          api_token: ${{ secrets.BRIGHT_SENSI_TEST}}
           hostname: app.brightsec.com
           name: Bright Scan - ${{ github.sha }}
           discovery_types: |
